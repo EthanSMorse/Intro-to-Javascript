@@ -15,3 +15,9 @@ let myList = ["Elden Ring", "Dark Souls", "Sekiro", "Bloodborne", "Demon Souls"]
 for (let item of myList) {
     console.log (item)
 }
+
+let x = "25"
+
+let y = x + 25
+
+console.log (y)

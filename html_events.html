@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamndburgner</title>
+</head>
+<body>
+    
+    <p id="my_paragraph">Hamndburgner</p>
+
+    <button onclick="changestyle()">Click Me</button>
+    <br>
+
+
+    <button id="my_counter" onclick="addCounter()">0</button>
+
+    <br>
+    <input id="my_input">
+    <br>
+    <button id="my_button" onclick="inputButton()">Bumnton</button>
+    <br>
+    <input id="my_secret">
+    <br>
+    <button id="my_button" onclick="secretButton()">Sneeki Breeki</button>
+    <br>
+     <script lang="js">
+        console.log ("Hamndburgner")
+
+        document.write ("Hamndburgner")
+
+    function changestyle () {
+        let myParagraph = document.getElementById("my_paragraph")
+        myParagraph.innerHTML = 'This was modified my javascript'
+        myParagraph.style = 'background: red; color: cyan;'
+        alert("Hamndburgner")
+    }
+
+    let counter = 0
+
+    function addCounter () {
+        counter = counter + 1
+        let myCounter = document.getElementById("my_counter")
+        myCounter.innerHTML = counter
+    }
+
+    function inputButton () {
+        let myCounter = document.getElementById("my_input")
+        console.log(myCounter.value)
+    }
+
+    function secretButton () {
+        let mySecret = document.getElementById("my_secret")
+        let sneekiBreeki = ("SneekiBreeki")
+        if (mySecret.value == sneekiBreeki) {
+            window.location = 'https://youtube.com'
+        } else {
+            document.write ("U R WRONG")
+        }
+
+    }
+     </script>
+</body>
+</html>
