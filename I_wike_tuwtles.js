@@ -144,3 +144,5 @@ for (let i = 0; i < 4; i ++) {
 }
 
 tortle.closePath ()
+
+tortle.setPosition (1000, 1000)
