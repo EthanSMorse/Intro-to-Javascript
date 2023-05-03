@@ -8,7 +8,11 @@
     border: px;
     border-radius: 10px;
  }
- body {
+body {
     text-align: center;
     margin-top: 200px;
- }
+}
+ol {
+    max-width: 100px;
+    margin-left: 675px;
+}
