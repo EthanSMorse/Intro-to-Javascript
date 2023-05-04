@@ -34,7 +34,7 @@ function start () {
                 seconds = 00
             }
             console.log (minutes)
-            digits.innerHTML = String(minutes).padStart(2,'0') + ':' + String(seconds).padStart(2,'0') + ':' + milliseconds / 10
+            digits.innerHTML = String(minutes).padStart(2,'0') + ':' + String(seconds).padStart(2,'0') + ':' + String(milliseconds / 10).padStart(2,'0')
         } ,10
     )
 }
@@ -59,11 +59,12 @@ function reset () {
     seconds = 00
     milliseconds = 0
     digits.innerHTML = '00:00:00'
+    myList.innerHTML = ' '
 }
 
 function lap() {
     const node = document.createElement("li");
-    const textnode = document.createTextNode(String(minutes).padStart(2,'0') + ':' + String(seconds).padStart(2,'0') + ':' + milliseconds / 10);
+    const textnode = document.createTextNode(String(minutes).padStart(2,'0') + ':' + String(seconds).padStart(2,'0') + ':' + String(milliseconds / 10).padStart(2,'0'));
     node.appendChild(textnode);
     document.getElementById("myList").appendChild(node);
 }
